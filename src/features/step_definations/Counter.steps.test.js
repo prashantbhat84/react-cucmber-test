@@ -6,6 +6,9 @@ import App from '../../App';
 const feature= loadFeature('./src/features/Counter.feature');
 
 defineFeature(feature, test=>{
+    describe("Testing Counter features",()=>{
+        
+    })
     test("Showing 0 initially",({given,when,then})=>{
         given('mount counter',()=>{
             render(<App/>)
